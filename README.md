@@ -1,17 +1,14 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
-
----
 
 # svelte app
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+This is a demo/template for a very simple svelte single page application with a bootstrap based simple responsive side bar.
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+It uses:
+- svelte
+- svelte-spa-router
+- bootstrap
+- [startbootstrap simple sidebar](https://startbootstrap.com/previews/simple-sidebar/)
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
@@ -21,7 +18,7 @@ cd svelte-app
 Install the dependencies...
 
 ```bash
-cd svelte-app
+cd (repo name)
 npm install
 ```
 

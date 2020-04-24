@@ -1,30 +1,39 @@
+
+<Sidebar>
+  <span slot="sidebar">
+    <a href="/"     class="list-group-item list-group-item-action bg-light" use:link use:active>Home</a>
+    <a href="/page" class="list-group-item list-group-item-action bg-light" use:link use:active>Example Page</a>
+  </span>
+  <span slot="content">
+    <Router {routes}/>
+  </span>
+</Sidebar>
+
 <script>
-	export let name;
+  import Router from 'svelte-spa-router'
+  import {link, push, pop, replace, location, querystring} from 'svelte-spa-router'
+  import active from 'svelte-spa-router/active'
+  import Sidebar from './Sidebar.svelte'
+
+  import Home from './Home.svelte'
+  import Page from './Page.svelte'
+  import NotFound from './NotFound.svelte'
+
+  // routes
+  const routes = {
+    '/': Home,
+    '/page' : Page,
+    '*': NotFound,
+  };
+
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
+/* Style for "active" links; need to mark this :global because the router adds the class directly */
+:global(.list-group-item.active) {
+    font-weight: bold;
+    color: black;
+}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
 </style>
