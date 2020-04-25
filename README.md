@@ -1,14 +1,13 @@
 
 # svelte app
 
-This is a demo/template for a very simple svelte single page application with a bootstrap based simple responsive side bar.
+This is a demo/template for a very simple svelte single page application with a purecss based simple responsive side bar.
 
 It uses:
 - svelte
 - svelte-spa-router
-- bootstrap
-- [startbootstrap simple sidebar](https://startbootstrap.com/previews/simple-sidebar/)
-
+- [purecss](https://purecss.io)
+- [purecss side-menu layout](https://purecss.io/layouts/side-menu/)
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 

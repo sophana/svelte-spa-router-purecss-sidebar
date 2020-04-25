@@ -1,33 +1,31 @@
-  <div class="d-flex" id="wrapper" class:toggled={menuActive}>
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <slot name="sidebar-heading">
-	<div class="sidebar-heading">
-	  Welcome!
-	</div>
+<div id="layout" class:active={menuActive}>
+    <!-- Menu toggle -->
+    <div id="menuLink" class="menu-link" on:click={() => menuActive=!menuActive} class:active={menuActive}>
+        <!-- Hamburger icon -->
+        <span></span>
+    </div>
+
+    <div id="menu" class:active={menuActive}>
+      <div class="pure-menu">
+	<slot name="sidebar-top">
+          <div class="pure-menu-heading">
+	    <div class="sidebar-heading">
+	      Welcome!
+	    </div>
+	  </div>
+	</slot>
+        <ul class="pure-menu-list">
+	  <slot name="sidebar">
+	  </slot>
+        </ul>
+      </div>
+    </div>
+
+    <div id="main">
+      <slot name="content">
       </slot>
-      <div class="list-group list-group-flush">
-	<slot name="sidebar">
-	</slot>
-      </div>
-
     </div>
-    <div id="page-content-wrapper">
-      <nav class="navbar  navbar-light bg-light border-bottom">
-
-	<button class="navbar-toggler" id="menu-toggle" on:click={() => menuActive=!menuActive}>
-	  <span class="navbar-toggler-icon"></span>
-	</button>
-	<slot name="top-content">
-	  <div class="navbar-brand"> Hello </div>
-	</slot>
-      </nav>
-      <div class="container-fluid">
-	<slot name="content">
-      	</slot>
-
-      </div>
-    </div>
-  </div>
+</div>
 
 <script>
   let menuActive=false;

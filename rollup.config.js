@@ -18,8 +18,8 @@ export default {
 	plugins: [
 		copy({
 			targets: [
-				//{src: '../node_modules/purecss/build/pure-min.css' , dest: 'dist' },
-				{src: 'node_modules/bootstrap/dist/css/bootstrap.min.css' , dest: 'public/build' }
+				{src: 'node_modules/purecss/build/pure-min.css' , dest: 'public/build' },
+				//{src: 'node_modules/bootstrap/dist/css/bootstrap.min.css' , dest: 'public/build' }
 			]
 		,   verbose: true
 		}),

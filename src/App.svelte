@@ -1,8 +1,9 @@
 
 <Sidebar>
   <span slot="sidebar">
-    <a href="/"     class="list-group-item list-group-item-action bg-light" use:link use:active>Home</a>
-    <a href="/page" class="list-group-item list-group-item-action bg-light" use:link use:active>Example Page</a>
+    <MenuItem href="/"    > Home </MenuItem>
+    <MenuItem href="/page"> Example Page </MenuItem>
+    <MenuItem href="/toto" eclass="menu-item-divided"> Dummy menu </MenuItem>
   </span>
   <span slot="content">
     <Router {routes}/>
@@ -11,9 +12,10 @@
 
 <script>
   import Router from 'svelte-spa-router'
-  import {link, push, pop, replace, location, querystring} from 'svelte-spa-router'
-  import active from 'svelte-spa-router/active'
+  //import {link, push, pop, replace, location, querystring} from 'svelte-spa-router'
+  //import active from 'svelte-spa-router/active'
   import Sidebar from './Sidebar.svelte'
+  import MenuItem from './MenuItem.svelte'
 
   import Home from './Home.svelte'
   import Page from './Page.svelte'
@@ -30,9 +32,9 @@
 
 <style>
 /* Style for "active" links; need to mark this :global because the router adds the class directly */
-:global(.list-group-item.active) {
+:global(.pure-menu-link.active) {
     font-weight: bold;
-    color: black;
+    color: #fff !important;
 }
 
 
