@@ -2,7 +2,7 @@
 <Sidebar>
   <span slot="sidebar">
     <MenuItem href="/"    > Home </MenuItem>
-    <MenuItem href="/page"> Example Page </MenuItem>
+    <MenuItem href="/page"> Example Page</MenuItem>
     <MenuItem href="/toto" eclass="menu-item-divided"> Dummy menu </MenuItem>
   </span>
   <span slot="content">

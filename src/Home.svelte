@@ -7,6 +7,7 @@
 
   <p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
   <p> This Single Page Application (SPA) is made with svelte and <a href="https://github.com/ItalyPaleAle/svelte-spa-router">svelte-spa-router</a></p>
+  <p> <a href="https://github.com/sophana/svelte-spa-router-purecss-sidebar">Github page</a></p>
 
   <h2>Purecss responsive sidebar</h2>
   <p>The layout of this page is taken from <a href="https://purecss.io/layouts/side-menu/">purecss demo layout</a>.</p>

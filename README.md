@@ -9,7 +9,10 @@ It uses:
 - [purecss](https://purecss.io)
 - [purecss side-menu layout](https://purecss.io/layouts/side-menu/)
 
+Please visit [Demo](https://sophana.github.io/svelte-spa-router-purecss-sidebar/)
+
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
+
 
 
 ## Get started
